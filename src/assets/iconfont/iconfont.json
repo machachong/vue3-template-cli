@@ -1,0 +1,37 @@
+{
+  "id": "4442082",
+  "name": "数据平台重置",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "重置图表整合",
+  "glyphs": [
+    {
+      "icon_id": "24001072",
+      "name": "列表搜索",
+      "font_class": "liebiaosousuo",
+      "unicode": "e714",
+      "unicode_decimal": 59156
+    },
+    {
+      "icon_id": "9577560",
+      "name": "开发平台",
+      "font_class": "kaifapingtai",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "975382",
+      "name": "返回",
+      "font_class": "return",
+      "unicode": "e6ba",
+      "unicode_decimal": 59066
+    },
+    {
+      "icon_id": "7279256",
+      "name": "开发平台",
+      "font_class": "develope",
+      "unicode": "e87f",
+      "unicode_decimal": 59519
+    }
+  ]
+}

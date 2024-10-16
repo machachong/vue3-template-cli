@@ -1,0 +1,351 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'puhui-nomal', 'PingFang SC', 'Microsoft Yahei';
+  // --font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+  //   Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+  //   'Noto Color Emoji';
+  // --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+  //   monospace;
+}
+body {
+  font-size: 14px;
+  background-color: var(--boke-bg-color);
+}
+
+// 字体 color
+.color-title {
+  color: var(--boke-color-text-title);
+}
+.color-describe {
+  color: var(--boke-color-text-describe);
+}
+.color-content {
+  color: var(--boke-color-text-content);
+}
+.color-main {
+  color: var(--boke-color-main);
+}
+.color-success {
+  color: var(--boke-color-success);
+}
+.color-fail {
+  color: var(--boke-color-fail);
+}
+.color-warning {
+  color: var(--boke-color-warning);
+}
+//  padding
+.py-14 {
+  padding: 14px 0;
+}
+.py-16 {
+  padding: 16px 0;
+}
+.px-20 {
+  padding: 0 20px;
+}
+.px-40 {
+  padding: 0 40px;
+}
+.px-88 {
+  padding: 0 88px !important; // 新增编辑页面底部按钮边距
+}
+.p-t-4 {
+  padding-top: 4px;
+}
+.p-t-8 {
+  padding-top: 8px;
+}
+.p-t-12 {
+  padding-top: 12px;
+}
+.p-t-16 {
+  padding-top: 16px;
+}
+.p-t-20 {
+  padding-top: 20px;
+}
+.p-t-22 {
+  padding-top: 22px;
+}
+.p-t-24 {
+  padding-top: 24px;
+}
+.p-t-30 {
+  padding-top: 30px;
+}
+.p-t-60 {
+  padding-top: 60px;
+}
+.p-b-22 {
+  padding-bottom: 22px;
+}
+.p-l-20 {
+  padding-left: 20px;
+}
+// margint值
+.m-l-8 {
+  margin-left: 8px;
+}
+.m-l-12 {
+  margin-left: 12px;
+}
+.m-l-16 {
+  margin-left: 16px;
+}
+.m-l-18 {
+  margin-left: 18px;
+}
+.m-t-4 {
+  margin-top: 4px;
+}
+.m-t-6 {
+  margin-top: 6px;
+}
+.m-t-8 {
+  margin-top: 8px;
+}
+.m-t-10 {
+  margin-top: 10px;
+}
+.m-t-12 {
+  margin-top: 12px;
+}
+.m-t-16 {
+  margin-top: 16px;
+}
+.m-t-18 {
+  margin-top: 18px;
+}
+.m-t-20 {
+  margin-top: 20px;
+}
+.m-b-10 {
+  margin-bottom: 10px;
+}
+// border radius
+.border-r-24 {
+  border-radius: 24px;
+}
+// fonts size
+.f-s-12 {
+  font-size: 12px;
+}
+.f-s-13 {
+  font-size: 13px;
+}
+.f-s-14 {
+  font-size: 14px;
+}
+.f-s-18 {
+  font-size: 18px;
+}
+.f-s-20 {
+  font-size: 18px;
+}
+.f-s-22 {
+  font-size: 18px;
+}
+.f-s-48 {
+  font-size: 48px;
+}
+// font-weight
+.f-w-400 {
+  font-weight: 400;
+}
+.f-w-500 {
+  font-weight: 500;
+}
+.f-w-600 {
+  font-weight: 600;
+}
+.f-w-700 {
+  font-weight: 700;
+}
+
+// line-height
+.line-h-18 {
+  line-height: 18px;
+}
+.line-h-20 {
+  line-height: 20px;
+}
+.line-h-70 {
+  line-height: 70px;
+}
+// flex
+.flex-middle {
+  display: flex;
+  align-items: center;
+}
+.flex-around {
+  @extend .flex-middle;
+  justify-content: space-between;
+}
+
+textarea {
+  font-family: inherit;
+}
+
+.text-inline {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-two-line {
+  overflow: hidden;
+  white-space: normal;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: var(--boke-color-text-content);
+}
+.div-inline {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.div-inline-between {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.div-column {
+  display: flex;
+  flex-flow: column;
+}
+
+.pre-line {
+  white-space: pre-line;
+}
+
+.input-border-hidden input,
+.input-border-hidden textarea {
+  border-width: 0;
+  outline: 0;
+}
+// 飞书卡片 more组件样式
+.lark-more-content {
+  border-radius: 6px;
+  box-sizing: border-box;
+  min-width: 250px;
+  max-height: 172px;
+  padding: 5px 8px;
+  margin: 0 4px;
+  width: 100%;
+  border-radius: 4px;
+  color: #1f2329;
+  line-height: 22px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(31, 35, 41, 0.08);
+  }
+}
+.report-card {
+  background: var(--boke-board-bg);
+  border-radius: 10px;
+  padding: 14px;
+}
+
+//搜索列表自定义字段栏样式
+.operation-area {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding-right: 20px;
+  box-sizing: border-box;
+  .column-operations {
+    display: flex;
+    flex-flow: row;
+    .column-operation__title {
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 30px;
+    }
+  }
+}
+// 搜索列表搜索栏样式
+.node-search {
+  background-color: var(--boke-card-bg);
+  text-align: left;
+  .node-search-form {
+    padding-left: 0;
+  }
+}
+// 下拉展开按钮
+.el-popover.el-popper.dropdown-menu {
+  padding: 6px !important;
+  min-width: 90px;
+}
+.my-dropdown-menu {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+.my-dropdown-menu li {
+  list-style: none;
+  line-height: 22px;
+  cursor: pointer;
+  padding: 3px 20px;
+}
+
+.my-dropdown-menu li:hover {
+  background-color: #ecf5ff;
+  color: #79bbff;
+}
+
+.my-dropdown-menu__item .el-icon {
+  width: 30px;
+}
+
+// 颜色点
+.boke-primary-point {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  vertical-align: middle;
+  background-color: var(--boke-color-main);
+}
+.boke-success-point {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  vertical-align: middle;
+  background-color: var(--boke-color-success);
+}
+.boke-danger-point {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  vertical-align: middle;
+  background-color: var(--boke-color-fail);
+}
+.boke-warning-point {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  vertical-align: middle;
+  background-color: var(--boke-color-warning);
+}
+.boke-point {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  vertical-align: middle;
+  background-color: var(--boke-color-text-describe);
+}
+
+// 可点击的文本样式
+.detail-text {
+  color: var(--boke-color-main);
+  cursor: pointer;
+}

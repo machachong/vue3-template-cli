@@ -1,0 +1,419 @@
+// 减小弹出菜单的项目高度
+.el-menu--popup {
+  .el-menu-item {
+    height: 36px;
+    line-height: 36px;
+  }
+  .el-sub-menu__title {
+    height: 36px;
+    line-height: 36px;
+  }
+}
+
+/**配置表格属性 **/
+// 表格行Hover颜色
+// 列表标题字体颜色
+.el-table {
+  .el-table__inner-wrapper {
+    // table hover行颜色
+    // 选中行颜色
+    .el-table__body tr.current-row > td.el-table__cell {
+      background: var(--boke-table-current-row-bg-color) !important;
+    }
+    tr {
+      background-color: var(--boke-card-bg);
+      .el-table__cell {
+        padding: 9px 0;
+        color: var(--boke-color-text-title);
+        @extend .h6;
+        font-weight: 400;
+        line-height: 22px;
+        border-bottom: 1px solid var(--boke-color-border-table);
+      }
+    }
+    .el-table__inner-wrapper::before {
+      background-color: var(--boke-color-border-table);
+    }
+    th.el-table__cell {
+      border-bottom: 1px solid var(--boke-color-border-table);
+      background-color: var(--boke-table-th-bg);
+      padding: 9px 0;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 22px;
+      @extend .font-medium;
+    }
+  }
+  .el-table__body .el-table__row.hover-row td,
+  .el-table__body tr:hover > td.el-table__cell {
+    background-color: var(--boke-table-current-row-bg-color);
+  }
+  &.el-table--small {
+    .el-table__inner-wrapper {
+      tr {
+        .el-table__cell {
+          padding: 4px 0;
+          @extend .h6;
+          font-size: 12px;
+          line-height: 22px;
+        }
+      }
+      th.el-table__cell {
+        padding: 4px 0;
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// vue3项目中 elementUI 中的按钮，点击后会有focus样式，且只有点击其他地方后，按钮才会失焦，样式才会恢复到点击之前的样式
+// 通过修改失焦后的样式来解决这个问题
+.el-button.el-button--primary.is-link:not(.is-disabled):focus {
+  color: var(--el-color-primary);
+}
+// 普通按钮是背景色
+.el-button.el-button--primary:not(.is-disabled, .is-link):focus {
+  background-color: var(--el-color-primary);
+}
+// danger类型按钮
+.el-button.el-button--danger.is-link:not(.is-disabled):focus {
+  color: var(--boke-color-fail);
+}
+.el-button.el-button--danger:not(.is-disabled, .is-link):focus {
+  background-color: var(--boke-color-fail);
+}
+.el-button--default {
+  background-color: var(--boke-bg-input);
+  color: var(--boke-color-text-content);
+}
+// 紧凑表格
+.small-table,
+.el-table--small {
+  .el-table th.el-table__cell {
+    background: none;
+  }
+  .el-table {
+    .el-table__header {
+      .el-table__cell {
+        padding: 7px 0;
+        font-size: 12px;
+        .cell {
+          line-height: 22px;
+        }
+      }
+    }
+
+    .el-table__body {
+      .el-table__cell {
+        padding: 4px 0;
+        .cell {
+          line-height: 22px;
+          color: var(--boke-table-small-color);
+        }
+      }
+      .el-table__row--striped {
+        .el-table__cell {
+          background: var(--boke-table-small-bg);
+        }
+      }
+    }
+  }
+}
+// tabs
+
+// 设置tabs的相关属性
+.el-tabs__item {
+  border: none;
+  &.is-active {
+    background-color: var(--boke-card-bg);
+  }
+}
+// 去除tabs标题与内容之间的间隔
+.el-tabs .el-tabs__header {
+  margin: 0;
+}
+.boke-tabs-card {
+  .el-card__body {
+    padding: 0px 20px 0 20px;
+  }
+}
+.boke-tabs {
+  .el-tabs {
+    &__item {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 60px;
+      height: 60px;
+      color: var(--boke-color-text- describe);
+      &.is-active {
+        color: var(--boke-color-text-title);
+        background: none;
+      }
+    }
+
+    &__nav-wrap::after {
+      content: '';
+      height: 0px;
+    }
+    &__active-bar {
+      height: 3px;
+      border-radius: 4px;
+    }
+  }
+}
+.boke-tabs-small {
+  @extend .boke-tabs;
+  .el-tabs {
+    &__item {
+      line-height: 40px;
+      height: 40px;
+    }
+  }
+}
+// 按钮样式tabs
+.tabs-button.el-tabs {
+  .el-tabs__nav {
+    background: var(--boke-bg-input);
+    padding: 3px;
+    border: none;
+  }
+  .el-tabs__item {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 26px;
+    height: 26px;
+    border: none;
+    font-size: 12px;
+    &.is-active {
+      color: var(--boke-color-main);
+    }
+  }
+  .el-tabs__header {
+    border: none;
+  }
+}
+// form样式
+.boke-form {
+  // 调整form右侧搜索按钮样式
+  .el-form {
+    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    .el-form-item {
+      margin: 0;
+    }
+  }
+  .el-form-item {
+    background-color: var(--boke-table-th-bg);
+    border-radius: 4px;
+    .el-form-item__label {
+      padding-left: 12px;
+      color: var(--boke-color-text-title);
+    }
+    .el-input__wrapper,
+    .el-select__wrapper {
+      background: none;
+      box-shadow: none;
+    }
+    &.no-bg {
+      background: none;
+    }
+  }
+  // 使表单和背景色不要紧贴
+  .el-checkbox-group,
+  .el-radio-group,
+  .el-switch {
+    padding-left: 10px;
+  }
+  // 调整查询栏，按钮样式
+  .boke-form__actions {
+    width: 180px;
+    padding: 5px 0 5px 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border-left: 1px solid var(--boke-color-border-divider);
+
+    .el-button + .el-button {
+      margin-left: 0;
+    }
+  }
+  .boke-form-add {
+    .el-form-item {
+      background-color: var(--boke-card-bg);
+      border-radius: 4px;
+      .el-form-item__content {
+        background-color: var(--boke-table-th-bg);
+      }
+    }
+  }
+}
+
+.el-form {
+  .el-select {
+    width: 100%;
+    min-width: 200px;
+  }
+}
+// select 样式
+.el-select__wrapper {
+  box-shadow: none;
+}
+// 调整el-card样式
+.el-card .el-card__header {
+  // border-bottom: 1px solid var(--boke-color-border-divider);
+  border: none;
+  padding-bottom: 10px;
+}
+// 给普通输入框下拉框加背景色
+.el-date-editor.el-input__wrapper,
+.el-input__wrapper,
+.el-input-group__append {
+  box-shadow: none;
+  border-radius: 4px;
+  background: var(--boke-table-th-bg);
+}
+// 给选择框加背景色
+.el-select__wrapper {
+  background: var(--boke-table-th-bg);
+}
+// button
+.el-button {
+  // background-color: var(--boke-bg-input);
+  border: none;
+  border-radius: 4px;
+  padding: 5px 16px;
+  // color: var(--boke-color-text-content);
+  line-height: 22px;
+  font-weight: 400;
+}
+.el-button--primary {
+  background: var(--boke-color-main);
+  color: var(--boke-color-fff);
+}
+// 弹窗样式
+.el-dialog {
+  background: var(--boke-dialog-bg);
+  padding: 0;
+  .el-dialog__header {
+    border-bottom: 1px solid var(--boke-color-border-divider);
+    padding: 16px 16px 14px 16px;
+  }
+  .el-dialog__headerbtn {
+    width: 40px;
+    height: 50px;
+    line-height: 50px;
+    top: 0;
+  }
+  .el-dialog__body {
+    padding: 16px 16px 0 16px;
+  }
+  .el-dialog__footer {
+    // padding: 0px 16px 16px 16px;
+    padding: 16px;
+  }
+}
+
+// 折叠面板
+.detail-content {
+  .el-collapse {
+    border-top: none;
+    border-bottom: none;
+    .el-collapse-item__wrap {
+      border: none;
+    }
+    .el-collapse-item__arrow {
+      display: none;
+    }
+    .el-collapse-item__header {
+      border-bottom: none;
+    }
+    .el-collapse-item__content {
+      padding-bottom: 0;
+    }
+  }
+}
+
+// 确认弹窗样式, 二次确认弹窗样式
+.boke-popconfirm {
+  padding: 20px 25px !important;
+}
+.el-message-box,
+.el-popconfirm {
+  .el-message-box__content {
+    font-size: 16px;
+    // i {
+    //   color: var(--boke-color-red);
+    // }
+  }
+  .el-message-box__btns,
+  .el-popconfirm__action {
+    margin-top: 27px;
+    .el-button {
+      background: var(--boke-color-red);
+      border: none;
+      &:first-child {
+        background: var(--boke-card-bg);
+        color: var(--boke-color-text-content);
+      }
+    }
+    .el-button--primary {
+      background-color: var(--boke-color-red);
+      &:focus,
+      &:active,
+      &:visited,
+      &:hover {
+        background-color: var(--boke-color-red) !important;
+      }
+    }
+  }
+}
+
+// link禁用样式
+.el-link.is-disabled {
+  .el-link__inner {
+    color: var(--boke-color-text-disable);
+  }
+}
+
+// sapce间隔线
+.el-space {
+  & > span {
+    color: var(--boke-color-text-describe);
+  }
+}
+
+// drawer样式修改
+.el-drawer__header {
+  margin-bottom: 0px;
+  padding: 15px;
+  border-bottom: 1px solid var(--boke-color-border-divider);
+}
+
+// wang editro
+.editor-wrapper {
+  background-color: var(--boke-bg-color);
+  .w-e-bar {
+    background-color: var(--boke-bg-color);
+  }
+  .w-e-text-container {
+    background-color: var(--boke-bg-color);
+  }
+  .w-e-text-container {
+    color: var(--boke-color-text-content);
+  }
+  .editor-title {
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    background: var(--boke-bg-color);
+    color: var(--boke-color-text-title);
+  }
+  .editor-des {
+    font-size: 16px;
+    background: var(--boke-bg-color);
+    color: var(--boke-color-text-describe);
+  }
+}

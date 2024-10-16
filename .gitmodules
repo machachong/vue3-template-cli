@@ -1,0 +1,4 @@
+[submodule "boke-ui"]
+	path = boke-ui
+	url = http://devops.pookgitlab.com/boke_db/public_component.git
+	branch = dev

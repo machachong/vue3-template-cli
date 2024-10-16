@@ -1,0 +1,31 @@
+@font-face {
+	font-family: "puhui-bold";
+	src: url("../font/alibabaFont/zh-cn/Alibaba-PuHuiTi-Bold.otf");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap; //直接使用备选字体，远程字体下载完毕后再进行替换。
+}
+
+@font-face {
+	font-family: "puhui-medium";
+	src: url("../font/alibabaFont/zh-cn/Alibaba-PuHuiTi-Medium.otf");
+	font-weight: Medium;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "puhui-nomal";
+	src: url("../font/alibabaFont/zh-cn/Alibaba-PuHuiTi-Regular.otf");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+// icon font
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

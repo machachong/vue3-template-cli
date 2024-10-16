@@ -1,0 +1,16 @@
+{
+  "id": "4459191",
+  "name": "数据平台重置-彩色",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "9132001",
+      "name": "分类",
+      "font_class": "quanbu",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    }
+  ]
+}

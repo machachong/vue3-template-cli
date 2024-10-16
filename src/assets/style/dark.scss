@@ -1,0 +1,31 @@
+@import "element-plus/theme-chalk/src/dark/css-vars.scss";
+html.dark {
+	--boke-color-fff: #fff; // 白色
+	--boke-bg-color: #121d36; // body背景色
+	--boke-card-bg: #182950; // 卡片背景色
+	--boke-color-main: #409eff; // 系统主色
+	--boke-bg-nav-first: #121d36; // 一级导航背景色
+	--boke-bg-nav-second: var(--boke-card-bg); // 二级导航背景色
+	--boke-bg-nav-second-active: #435072; // 二级导航选中背景色
+	--boke-color-text-title: rgba(255, 255, 255, 0.95); // 标题文字色
+	--boke-color-text-content: rgba(255, 255, 255, 0.85); // 正文文字颜色
+	--boke-color-text-describe: #9aa2a1; // 辅助描述文字颜色
+	--boke-color-text-disable: #cccccc; // 禁用文字色
+	--boke-search-divider-color: #5a6680; // 搜索栏右侧按钮分割线颜色
+	--boke-color-border-divider: #4c6ba8; // 分割线颜色
+	--boke-color-border-table: #4c6ba8; // 表格线颜色
+	--boke-bg-input: #435072; // 输入框背景色
+	--boke-color-success: #00b42a; // 成功色
+	--boke-color-fail: #ff707d; // 失败色
+	--boke-color-warning: #ffab13; // 警告色
+	--boke-table-th-bg: #435072; // 表格头部背景色，搜索表单背景颜色
+	--boke-table-current-row-bg-color: #525b9b; // 表格当前行背景色
+	--boke-board-bg: rgba(237, 242, 255, 0.15); // 报表卡片背景色
+	--boke-table-small-bg: var(--boke-bg-nav-first); // 小表格背景色
+	--boke-table-small-color: var(--boke-color-text-content); // 小表格文字色
+	--boke-color-red: #ff4557; // 红色
+	--boke-dialog-bg: var(--boke-card-bg); // 波克弹窗颜色
+	--boke-title-bg: #9695ff66; // title颜色
+	--el-color-primary: var(--boke-color-main); // 重置element ui主题色
+	--el-mask-color: var(--boke-card-bg); // el-laoding颜色
+}

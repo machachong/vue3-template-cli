@@ -1,0 +1,65 @@
+/*docs\public\css\index.css*/
+
+:root {
+  --el-color-primary: #2970ff;
+  --boke-color-fff: #fff;
+  --boke-bg-color: #eff4ff;
+  --boke-card-bg: #fff; // 卡片背景色
+  --boke-color-main: #2970ff; // 系统主色
+  --boke-bg-nav-first: #eff4ff; // 一级导航背景色
+  --boke-bg-nav-first-icon: #898d95; // 一级导航图标颜色
+  --boke-bg-nav-second: #e5ebfb; // 二级导航背景色
+  --boke-bg-nav-second-active: #fff; // 二级导航选中背景色
+  --boke-color-text-title: #303133; // 标题文字色
+  --boke-color-text-content: #606266; // 正文文字颜色
+  --boke-color-text-describe: #9aa2a1; // 辅助描述文字颜色
+  --boke-color-text-disable: #cccccc; // 禁用文字色
+  --boke-search-divider-color: #e5e6eb; // 搜索栏右侧按钮分割线颜色
+  --boke-color-border-divider: rgba(217, 217, 217, 0.8); // 分割线颜色
+  --boke-color-border-table: #e5e6eb; // 表格线颜色
+  --boke-bg-input: #f6f9ff; // 输入框背景色
+  --boke-color-success: #00b42a; // 成功色
+  --boke-color-fail: #ff707d; // 失败色
+  --boke-color-warning: #ffab13; // 警告色
+  --boke-table-th-bg: #f6f9ff; // 表格头部背景色，搜索表单背景颜色
+  --boke-table-current-row-bg-color: #ede9fe; // 表格当前行背景色
+  --boke-board-bg: #fafbff; // 报表卡片背景色
+  --boke-table-small-bg: #eef3ff; // 小表格背景色
+  --boke-table-small-color: #1d2129; // 小表格文字色
+  --boke-color-red: #ff4557; // 红色
+  --boke-dialog-bg: var(--boke-card-bg); // 波克弹窗颜色
+}
+
+.demo-block .meta {
+  background-color: var(--vp-code-block-bg);
+}
+.demo-block .t_layout_page {
+  overflow: visible;
+  padding: 0;
+}
+.demo-block .t_layout_page .t_layout_page_item {
+  padding: 0;
+  margin: 0;
+}
+html.dark {
+  --vp-code-block-bg: var(--vp-c-bg-alt);
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+// 修复element表格再vitepress中的样式Bug
+.el-date-table {
+  display: table;
+  tr {
+    border: none;
+    td,
+    th {
+      border: none;
+    }
+  }
+  tr {
+    &:nth-child(2n) {
+      background-color: transparent;
+    }
+  }
+}
